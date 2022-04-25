@@ -3,14 +3,25 @@
 body {
   background-color: hsl(204, 43%, 93%);
 }
+.card {
+  width: 640px;
+  height: 480px;
+}
+
 .top {
   background-color: white;
+  width: 640px;
+  height: 210px;
 }
 .left {
   background-color: hsl(174, 62%, 43%);
+  width: 320px;
+  height: 270px;
 }
 .right {
   background-color: hsl(173, 44%, 49%);
+  width: 320px;
+  height: 270px;
 }
 .lightgray {
   color: hsl(218, 22%, 67%);
@@ -41,4 +52,21 @@ body {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+@media (max-width: 640px) {
+  .m-flexcol {
+    flex-direction: column;
+  }
+  .w320 {
+    width: 320px;
+  }
+  .h750 {
+    height: 750px;
+  }
+  .h270 {
+    height: 280px;
+  }
+  .h240 {
+    height: 240px;
+  }
 }
